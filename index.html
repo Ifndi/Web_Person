@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Form Web</title>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="warper"> 
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-i"></i>
+                    <div class="logo-text">Irfandi Witjaksono</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="navlinks">
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portofolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="saya.jpeg" alt="">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Irfandi Witjaksono</h1>
+                    <p>Perkenalkan, nama saya Irfandi Witjaksono, lulusan dari Universitas Sugeng Hartono dengan gelar di bidang Teknologi Informasi, khususnya dalam pengembangan web. Saya memiliki keahlian dalam berbagai bahasa pemrograman, termasuk HTML, CSS, JavaScript, dan Photoshop , serta pemahaman mendalam tentang prinsip UI/UX. Keterampilan ini memungkinkan saya untuk menciptakan pengalaman pengguna yang menarik dan fungsional dalam setiap proyek yang saya kerjakan. 
+                        <br> 
+                        <br>
+                        Saya dikenal memiliki kemampuan beradaptasi yang cepat, serta mampu bekerja dengan baik dalam tim. Meskipun demikian, saya menyadari bahwa saya cenderung kurang teliti, yang terkadang mengarah pada kesalahan kecil. Untuk mengatasi hal ini, saya menerapkan metode double check dalam pekerjaan saya untuk memastikan setiap detail diperhatikan. Saya berkomitmen untuk terus mengembangkan keterampilan saya dan memberikan kontribusi yang berarti dalam setiap proyek yang saya jalani.</p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download Cv</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+
+                        <a href="https://www.facebook.com/share/mkGyJ6xfUjxFyCJA/"><i class="fa-brands fa-facebook"></i></a>
+
+                        <a href="https://www.linkedin.com/in/irfandi-witjaksono-577791321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+
+                        <a href="https://www.instagram.com/exeaaex/"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="https://x.com/nf_fndi?t=besXM6zeyHX4Dh1O6BhcPQ&s=09"><i class="fa-brands fa-twitter"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+<script >
+
+let togglebtn = document.querySelector(".togglebtn");
+let nav = document.querySelector(".navlinks");
+let links = document.querySelector(".navlinks li");
+
+togglebtn.addEventListener("click", function(){
+    this.classList.toggle("click")
+    nav.classList.toggle("open");
+});
+
+let typed = new Typed(".input",{
+    strings: ["Frontend Developer" , "Web Developer", "UX designer"],
+    typeSpeed: 70,
+    backSpeed: 55,
+    loop: true
+})
+
+</script>
+</html>
